@@ -14,7 +14,7 @@
         null,
         null,
         1,
-        2,
+        0,
         null,
         null,
         1,
@@ -22,27 +22,19 @@
         null,
         null,
         1,
-        2,
+        0,
         null,
         null,
         1,
-        2,
+        0,
         null,
         null,
         null
       ],
-      "/Users/larahoyatrujillo/Documents/GroopiePets/spec/models/user_spec.rb": [
+      "/Users/larahoyatrujillo/Documents/GroopiePets/spec/controllers/site_controller_spec.rb": [
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
         null,
         null
       ],
@@ -547,8 +539,8 @@
         1,
         null,
         1,
-        2,
-        3,
+        1,
+        1,
         1,
         1,
         null,
@@ -573,8 +565,27 @@
       "/Users/larahoyatrujillo/Documents/GroopiePets/app/helpers/application_helper.rb": [
         1,
         null
+      ],
+      "/Users/larahoyatrujillo/Documents/GroopiePets/app/helpers/site_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/larahoyatrujillo/Documents/GroopiePets/app/controllers/site_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/larahoyatrujillo/Documents/GroopiePets/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
       ]
     },
-    "timestamp": 1452603865
+    "timestamp": 1452615374
   }
 }

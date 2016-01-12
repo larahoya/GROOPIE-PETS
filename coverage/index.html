@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-01-12T14:04:25+01:00">2016-01-12T14:04:25+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-01-12T17:16:14+01:00">2016-01-12T17:16:14+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.89%</span></span>
+    (<span class="covered_percent"><span class="green">95.56%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.06
+       <span class="red">
+         0.95
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>21</b> files in total.
+    <b>24</b> files in total.
     <b>90</b> relevant lines. 
-    <span class="green"><b>89</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <span class="green"><b>86</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,7 +51,37 @@
     <tbody>
       
       <tr>
+        <td class="strong"><a href="#aa08936791e12ecad83c90adc1a5a478077e07de" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c9d8c1ee4aa837880b307a1a08338c5b9757e477" class="src_link" title="app/controllers/site_controller.rb">app/controllers/site_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#83a0dbc3825427485b31f3fec72711b8b9fc5280" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6c67d1106986b628a2008415b2efc8f425386be0" class="src_link" title="app/helpers/site_helper.rb">app/helpers/site_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -211,21 +241,21 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#4e5bbdce008058d66261f70a5ff3ce2209a7cc67" class="src_link" title="spec/controllers/site_controller_spec.rb">spec/controllers/site_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#c2be67c6c3328e662210e2f93e9336c4a092be59" class="src_link" title="spec/factories/users.rb">spec/factories/users.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>10</td>
         <td>6</td>
         <td>6</td>
-        <td>0</td>
-        <td>1.5</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#0a251149101dc202653a1ccc1688b80c4d16083e" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>13</td>
-        <td>7</td>
-        <td>7</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -242,12 +272,12 @@
       
       <tr>
         <td class="strong"><a href="#604c145b04e69194bc88c222db985317bcbe9e6e" class="src_link" title="spec/support/database_cleaner.rb">spec/support/database_cleaner.rb</a></td>
-        <td class="green strong">90.91 %</td>
+        <td class="red strong">63.64 %</td>
         <td>23</td>
         <td>11</td>
-        <td>10</td>
-        <td>1</td>
-        <td>1.2</td>
+        <td>7</td>
+        <td>4</td>
+        <td>0.6</td>
       </tr>
       
       <tr>
@@ -276,6 +306,108 @@
     
       <div class="source_files">
       
+        <div class="source_table" id="aa08936791e12ecad83c90adc1a5a478077e07de">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Prevent CSRF attacks by raising an exception.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # For APIs, you may want to use :null_session instead.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protect_from_forgery with: :exception</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="c9d8c1ee4aa837880b307a1a08338c5b9757e477">
+  <div class="header">
+    <h3>app/controllers/site_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SiteController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def home</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="83a0dbc3825427485b31f3fec72711b8b9fc5280">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
@@ -294,6 +426,36 @@
           <span class="hits">1</span>
           
           <code class="ruby">module ApplicationHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="6c67d1106986b628a2008415b2efc8f425386be0">
+  <div class="header">
+    <h3>app/helpers/site_helper.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module SiteHelper</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
@@ -3114,6 +3276,54 @@
   </pre>
 </div>
       
+        <div class="source_table" id="4e5bbdce008058d66261f70a5ff3ce2209a7cc67">
+  <div class="header">
+    <h3>spec/controllers/site_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe SiteController, type: :controller do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="c2be67c6c3328e662210e2f93e9336c4a092be59">
   <div class="header">
     <h3>spec/factories/users.rb</h3>
@@ -3146,14 +3356,14 @@
           <code class="ruby">  factory :user do |f|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
           <code class="ruby">    f.name {Faker::Name.first_name}</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">    f.email {Faker::Internet.email}</code>
         </li>
@@ -3183,102 +3393,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="0a251149101dc202653a1ccc1688b80c4d16083e">
-  <div class="header">
-    <h3>spec/models/user_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">require &#39;rails_helper&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">RSpec.describe User, type: :model do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &quot;validations&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &#39;has a valid factory&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(FactoryGirl.create(:user)).to be_valid</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &#39;is invalid without a name&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(FactoryGirl.build(:user, name: nil)).not_to be_valid</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
@@ -3651,11 +3765,11 @@
         <div class="source_table" id="604c145b04e69194bc88c222db985317bcbe9e6e">
   <div class="header">
     <h3>spec/support/database_cleaner.rb</h3>
-    <h4><span class="green">90.91 %</span> covered</h4>
+    <h4><span class="red">63.64 %</span> covered</h4>
     <div>
       <b>11</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -3704,8 +3818,8 @@
           <code class="ruby">  config.before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
           
           <code class="ruby">    DatabaseCleaner.strategy = :transaction</code>
         </li>
@@ -3752,8 +3866,8 @@
           <code class="ruby">  config.before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
           
           <code class="ruby">    DatabaseCleaner.start</code>
         </li>
@@ -3776,8 +3890,8 @@
           <code class="ruby">  config.after(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
           
           <code class="ruby">    DatabaseCleaner.clean</code>
         </li>
