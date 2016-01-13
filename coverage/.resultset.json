@@ -1,6 +1,20 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/larahoyatrujillo/Documents/code_challenges/GroopiePets/spec/support/controller_helpers.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
       "/Users/larahoyatrujillo/Documents/code_challenges/GroopiePets/spec/support/factory_girl.rb": [
         1,
         1,
@@ -14,7 +28,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -22,11 +36,11 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -35,10 +49,18 @@
         1,
         null,
         1,
+        null,
         1,
         1,
         1,
-        0,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
         null,
         null,
         null
@@ -72,6 +94,9 @@
         null,
         1,
         null,
+        1,
+        1,
+        1,
         1,
         null,
         1,
@@ -580,7 +605,7 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -601,6 +626,6 @@
         null
       ]
     },
-    "timestamp": 1452709818
+    "timestamp": 1452711757
   }
 }
