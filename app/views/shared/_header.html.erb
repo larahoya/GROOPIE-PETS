@@ -1,2 +1,40 @@
+<% if @user %>
+
+<p>Hello <%= @user.name %>!</p>
+<%= link_to "Log out", destroy_user_session_path(@user), method: :delete %>
+<%= link_to "Home", root_path %>
+
+<% else %>
+
+<section id="form-login">
+  <form class="new_user" id="new_user" action="/login" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="authenticity_token" />
+    
+    <div class="field">
+      <label for="user_email">Email</label><br />
+      <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" />
+    </div>
+
+    <div class="field">
+      <label for="user_password">Password</label><br />
+      <input autocomplete="off" type="password" name="user[password]" id="user_password" />
+    </div>
+
+    <div class="field">
+      <input name="user[remember_me]" type="hidden" value="0" />
+      <input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+      <label for="user_remember_me">Remember me</label>
+    </div>
+
+    <div class="actions">
+      <input type="submit" name="commit" value="Log in" />
+    </div>
+  </form>
+</section>
+
 <a href="/" id="link-signup">Sign up</a>
+<a href="/">Home</a>
+
+<% end %>
 
