@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'handlebars_assets', github: 'leshill/handlebars_assets'
 gem "paperclip", "~> 4.3"
 gem 'bootstrap-sass'
 gem 'devise'

@@ -1,0 +1,22 @@
+<div class='form-signup'>
+  <form class="new_user" id="new_user" action="/" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" id='authenticity_token' name="authenticity_token" />
+
+    <label for="name">Name</label>
+    <input type="text" name="user[name]" id="user_name" /><br>
+
+    <label for="user_email">Email</label>
+    <input type="email" name="user[email]" id="user_email" /><br>
+
+    <label for="user_password">Password</label>
+    <em>(8 characters minimum)</em>
+    <input autocomplete="off" type="password" name="user[password]" id="user_password" /><br>
+
+    <label for="user_password_confirmation">Password confirmation</label>
+    <input autocomplete="off" type="password" name="user[password_confirmation]" id="user_password_confirmation" /><br>
+
+    <input id='btn-register' type="submit" name="commit" value="Sign up" />
+
+  </form>
+</div>
