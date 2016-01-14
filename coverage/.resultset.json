@@ -28,7 +28,7 @@
         null,
         null,
         1,
-        0,
+        6,
         null,
         null,
         1,
@@ -36,11 +36,11 @@
         null,
         null,
         1,
-        0,
+        6,
         null,
         null,
         1,
-        0,
+        6,
         null,
         null,
         null
@@ -50,6 +50,30 @@
         null,
         1,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/larahoyatrujillo/Documents/code_challenges/GroopiePets/spec/rails_helper.rb": [
@@ -554,10 +578,12 @@
       ],
       "/Users/larahoyatrujillo/Documents/code_challenges/GroopiePets/spec/factories/pets.rb": [
         1,
+        null,
         1,
-        1,
-        1,
-        1,
+        6,
+        6,
+        4,
+        null,
         null,
         null,
         null
@@ -602,9 +628,12 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
         null
       ]
     },
-    "timestamp": 1452713613
+    "timestamp": 1452786923
   }
 }
