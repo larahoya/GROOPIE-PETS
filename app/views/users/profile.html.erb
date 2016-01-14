@@ -1,0 +1,9 @@
+<section id="user-pets-index">
+
+  <ul>
+    <% @pets.each do |pet| %>
+      <li><a href="/" class="pet-link" data-id="<%= pet.user_id %>"><%= pet.name %></li>
+    <% end %>
+  </ul>
+
+</section>

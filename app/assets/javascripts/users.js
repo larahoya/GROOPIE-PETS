@@ -1,2 +1,20 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+(function() {
+
+if (window.GroopiePets === undefined){
+  window.GroopiePets = {};
+}
+
+'use strict';
+
+GroopiePets.User = GroopiePets.User || {};
+
+})();
+
+$(document).on('ready', function() {
+
+  $(document).on('click', '#link-signup', function(event) {
+    event.preventDefault();
+    $('.main').html(HandlebarsTemplates['users/signup'])
+  });
+
+})
