@@ -7,11 +7,6 @@ RSpec.describe PetsController, type: :controller do
       get :index
       expect(response).to render_template(:index)
     end
-
-    it 'respond with a 200 status code' do
-      get :index
-      expect(response).to have_http_status(200)
-    end
   end
 
   describe '#new' do
@@ -21,11 +16,6 @@ RSpec.describe PetsController, type: :controller do
     it 'render the new template' do
       get :new
       expect(response).to render_template(:new)
-    end
-
-    it 'respond with a 200 status code' do
-      get :new
-      expect(response).to have_http_status(200)
     end
   end
 
@@ -78,7 +68,39 @@ RSpec.describe PetsController, type: :controller do
     it 'delete the pet' do
       expect(Pet.all.count).to eq(0)
     end
+  end
 
+  describe '#update' do
+
+    context 'all the information is correct' do
+      before (:each) do
+        @user = FactoryGirl.create(:user)
+        sign_in @user
+        @pet = FactoryGirl.create(:pet, name:'boby')
+        put :update, {id: @pet.id, pet: {name: 'lulu', species: @pet.species, age: @pet.age}}
+      end
+      it 'update the attributes of the pet' do
+        expect(Pet.find(@pet.id).name).to eq('lulu')
+      end
+      it 'redirect to the user profile' do
+        expect(response).to redirect_to(profile_path)
+      end
+    end
+
+    context 'some information is missing or incorrect' do
+      before (:each) do
+        @user = FactoryGirl.create(:user)
+        sign_in @user
+        @pet = FactoryGirl.create(:pet, name:'boby')
+        put :update, {id: @pet.id, pet: {name: nil, species: @pet.species, age: @pet.age}}
+      end
+      it 'does not update the attributes of the pet' do
+        expect(Pet.find(@pet.id).name).to eq('boby')
+      end
+      it 'render the edit template' do
+        expect(response).to render_template(:edit)
+      end
+    end
   end
 
 end
