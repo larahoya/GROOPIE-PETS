@@ -1,5 +1,5 @@
 <section id="pets-new">
-  <%= form_for [@project, @entry] do |f| %>
+  <%= form_for [@user, @pet] do |f| %>
 
     <%= f.label :name %>
     <%= f.text_field :name %>
@@ -8,7 +8,7 @@
     <%= f.text_field :species %>
     <br>
     <%= f.label :age %>
-    <%= f.integer_field :age %>
+    <%= f.number_field :age %>
     <br>
     <%= f.label :avatar %>
     <%= f.file_field :avatar %>

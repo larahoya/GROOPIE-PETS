@@ -12,7 +12,14 @@ RSpec.describe PetsController, type: :controller do
       get :index
       expect(response).to have_http_status(200)
     end
-    
+  end
+
+  describe '#new' do
+    it 'render the new template' do
+      sign_in FactoryGirl.create(:user)
+      get :new
+      expect(response).to render_template(:new)
+    end
   end
 
 end
