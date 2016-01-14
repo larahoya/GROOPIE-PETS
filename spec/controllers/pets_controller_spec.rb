@@ -45,6 +45,9 @@ RSpec.describe PetsController, type: :controller do
       it 'creates a new pet that belongs to the current user' do
         expect(Pet.last.user_id).to eq(@user.id)
       end
+      it 'redirect to the user profile' do
+        expect(response).to redirect_to(profile_path)
+      end
     end
 
     context 'some information is missing or incorrect' do
@@ -62,6 +65,20 @@ RSpec.describe PetsController, type: :controller do
         expect(response).to render_template(:new)
       end
     end
+  end
+
+  describe '#destroy' do
+    before (:each) do
+      @user = FactoryGirl.create(:user)
+      sign_in @user
+      @pet = FactoryGirl.create(:pet, user_id: @user.id)
+      delete :destroy, {id: @pet.id}
+    end
+
+    it 'delete the pet' do
+      expect(Pet.all.count).to eq(0)
+    end
+
   end
 
 end

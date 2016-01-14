@@ -18,10 +18,30 @@ class PetsController < ApplicationController
       flash[:notice] = 'You have a new pet!'
       redirect_to action: 'profile', controller: 'users'
     else
-      flash[:alert] = "Pet couldn't be created"
+      flash[:alert] = "Pet couldn't be saved"
       @errors = @pet.errors.full_messages
       render 'new'
     end
+  end
+
+  def update
+    @user = current_user
+    @pet = Pet.find(params[:id])
+    if @pet.update_attributes(pet_params)
+      flash[:notice] = "Pet updated!"
+      redirect_to action: 'profile', controller: 'users'
+    else
+      flash[:alert] = "Pet couldn´t be updated"
+      @errors = @pet.errors.full_messages
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @pet = Pet.find(params[:id])
+    @pet.destroy
+    flash[:notice] = "Pet deleted"
+    redirect_to action:'profile', controller: 'users'
   end
 
   private
